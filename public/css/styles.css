@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+#game-container {
+  margin: 20px auto;
+}
+
+#game {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 2px;
+  width: 100%;
+  max-width: 320px; /* Augmenter la taille maximale de la grille */
+  aspect-ratio: 1;
+}
+
+.cell {
+  width: 100%;
+  padding-top: 100%; /* Maintenir les cellules carrées */
+  position: relative;
+  background-color: #3498db; /* Couleur de base */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-size: 0; /* Empêcher les sauts de taille */
+}
+
+.cell::after {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.cell.mine::after {
+  content: "💣";
+}
+
+.cell.flagged {
+  background-color: #f39c12;
+}
+
+.cell.revealed {
+  background-color: #95a5a6;
+  cursor: default;
+  font-size: 18px;
+}
+
+.cell:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Timer */
+#timer {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+  #pug-container {
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  #pug-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+  }
+  
