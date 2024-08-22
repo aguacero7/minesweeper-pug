@@ -2,6 +2,7 @@
 
 Welcome to **Pug Garden Minesweeper**! A classic Minesweeper game with a whimsical twist, inspired by pugs and gardens. Help our pug avoid the dangers hidden beneath the garden tiles.
 
+![image_info](public/images/pugjs.png)
 
 ## 🌟 Features
 
@@ -88,4 +89,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 **Have fun and help our pug safely navigate the garden! 🐾**
 
-![image_info](public/images/pugjs.png)
