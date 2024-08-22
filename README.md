@@ -1,79 +1,91 @@
 # 🐾 Pug Garden Minesweeper
 
-Bienvenue dans **Pug Garden Minesweeper** ! Un jeu de démineur classique avec une touche de fantaisie et un thème inspiré par les pugs et les jardins. Aidez notre pug à éviter les dangers cachés sous les cases du jardin.
+Welcome to **Pug Garden Minesweeper**! A classic Minesweeper game with a whimsical twist, inspired by pugs and gardens. Help our pug avoid the dangers hidden beneath the garden tiles.
 
-## 🌟 Fonctionnalités
 
-- **Grille de jeu personnalisable** : Grille responsive et parfaitement carrée pour une expérience de jeu fluide sur tous les appareils.
-- **Thème Animalier** : Les mines sont représentées par des empreintes de pattes et la première case cliquée affiche une adorable patte de chien.
-- **Mise en place de mines intelligente** : Les mines sont placées après le premier clic pour garantir que la première case cliquée est toujours sûre.
-- **Gestion de drapeaux** : Marquez les cases que vous suspectez de contenir une mine.
-- **Timer intégré** : Gardez un œil sur le temps écoulé pour améliorer votre performance à chaque partie.
-- **Design moderne** : Interface utilisateur épurée avec des couleurs douces et des transitions fluides.
+## 🌟 Features
 
-## 🚀 Comment démarrer
+- **Customizable Game Grid**: Responsive and perfectly square grid for a smooth gameplay experience on all devices.
+- **Smart Mine Placement**: Mines are placed after the first click to ensure the first tile clicked is always safe.
+- **Flag Management**: Mark the tiles you suspect of containing a mine.
+- **Integrated Timer**: Keep track of the elapsed time to improve your performance with each game.
+- **Modern Design**: Clean user interface with soft colors and smooth transitions.
 
-### Prérequis
+## 🚀 Getting Started
 
-Assurez-vous d'avoir installé [Node.js](https://nodejs.org/) sur votre machine.
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ### Installation
 
-1. Clonez ce dépôt :
+1. Clone this repository:
 
     ```bash
     git clone https://github.com/yourusername/pug-garden-minesweeper.git
     cd pug-garden-minesweeper
     ```
 
-2. Installez les dépendances :
+2. Install dependencies:
 
     ```bash
     npm install
     ```
 
-3. Lancez le serveur :
+3. Start the server:
 
     ```bash
     node app.js
     ```
 
-4. Ouvrez votre navigateur à l'adresse suivante : [http://localhost:3000](http://localhost:3000)
+4. Open your browser and navigate to: [http://localhost:3000](http://localhost:3000)
 
-## 🎮 Instructions de jeu
+## 🎮 How to Play
 
-1. **Commencer le jeu** : Cliquez sur une case pour commencer. La première case cliquée est toujours sûre.
-2. **Marquer une case** : Effectuez un clic droit sur une case pour la marquer avec un drapeau.
-3. **Revelez une case** : Cliquez sur une case non marquée pour la révéler. Si la case contient une mine, la partie est terminée.
-4. **Gagnez la partie** : Révélez toutes les cases qui ne contiennent pas de mines pour gagner.
+1. **Start the Game**: Click on a tile to begin. The first tile clicked is always safe.
+2. **Mark a Tile**: Right-click on a tile to flag it.
+3. **Reveal a Tile**: Click on an unmarked tile to reveal it. If the tile contains a mine, the game is over.
+4. **Win the Game**: Reveal all the tiles that do not contain mines to win.
 
-## 🖼️ Thème et Design
+## 📂 Project Structure
 
-- **Couleurs** : Inspirées par la nature et les jardins, avec des tons verts et bleus pour une ambiance calme et naturelle.
-- **Images** : Utilisation d'une image de patte pour le premier clic, et de jolies icônes pour les mines et les drapeaux.
+- `public/`: Contains static files like CSS styles, images, and JavaScript scripts.
+- `views/`: Pug (templates) files for rendering HTML dynamically.
+- `app.js`: Main entry point of the Node.js application.
+- `script.js`: Main game logic, handling clicks, mines, and the timer.
 
-## 📂 Structure du projet
+## 🛠️ Technologies Used
 
-- `public/`: Contient les fichiers statiques comme les styles CSS, les images, et les scripts JavaScript.
-- `views/`: Fichiers Pug (templates) pour le rendu du HTML.
-- `app.js`: Point d'entrée principal de l'application Node.js.
-- `script.js`: Logique principale du jeu, gestion des clics, des mines, et du timer.
+- **Node.js**: Server to handle requests and serve the application.
+- **Express**: Minimalist framework for Node.js.
+- **Pug**: Template engine to dynamically generate HTML.
+- **CSS Grid**: Used to build a responsive grid.
 
-## ✨ Personnalisation
+## 🤝 Contributing
 
-Vous pouvez facilement personnaliser le thème et les icônes en remplaçant les images dans le dossier `public/images` et en ajustant les styles dans `styles.css`.
+Contributions are welcome! Whether it's bug fixes, new features, or improvements, feel free to make a pull request. Here’s how you can contribute:
 
-## 🛠️ Technologies utilisées
+1. **Fork the repository**.
+2. **Create a new branch** (`git checkout -b feature-name`).
+3. **Commit your changes** (`git commit -m 'Add some feature'`).
+4. **Push to the branch** (`git push origin feature-name`).
+5. **Open a pull request**.
 
-- **Node.js** : Serveur pour gérer les requêtes et servir l'application.
-- **Express** : Framework minimaliste pour Node.js.
-- **Pug** : Moteur de templates pour générer le HTML dynamiquement.
-- **CSS Grid** : Utilisé pour construire une grille responsive.
+Please make sure to update tests as appropriate.
 
-## 📜 Licence
+## 🗨️ Community
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Join the conversation! We’re excited to hear your feedback and ideas:
+
+- **Issues**: Found a bug? Have a feature request? [Open an issue](https://github.com/yourusername/pug-garden-minesweeper/issues).
+- **Discussions**: Share your thoughts or ask questions in our [Discussions forum](https://github.com/yourusername/pug-garden-minesweeper/discussions).
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-**Amusez-vous bien et aidez notre pug à traverser le jardin en toute sécurité ! 🐾**
+**Have fun and help our pug safely navigate the garden! 🐾**
+
+![image_info](public/images/pugjs.png)
