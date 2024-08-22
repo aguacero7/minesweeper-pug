@@ -67,7 +67,7 @@ function onCellClick(event) {
 
   if (cell.dataset.mine === 'true') {
     cell.classList.add('mine');
-    alert('Game Over!');
+    alert('Mince mince mince !!!!!');
     clearInterval(timerInterval);
     gameOver = true;
   } else {
