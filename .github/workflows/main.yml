@@ -39,7 +39,7 @@ jobs:
       run: npm run build --if-present
 
     - name: Run tests
-      run: node app.js
+      run: node ci-test.js
 
   publish:
     needs: build
