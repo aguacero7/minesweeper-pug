@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'Pug Garden Minesweeper' });
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+  });
+}
+
+module.exports = app; // Exporte l'application pour les tests
